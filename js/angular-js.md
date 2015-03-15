@@ -2,7 +2,8 @@
 
 ## Project Start Tips
 
- - Use [bluebird][bluebird], not `$q`
+ - ### Promises 
+ Use [bluebird][bluebird], not `$q`
  ```JS
  function trackDigests(app) {
     app.run(["$rootScope",function ($rootScope) {
