@@ -2,8 +2,8 @@
 
 ## Project Start Tips
 
- - ### Promises 
- Use [bluebird][bluebird], not `$q`
+### Promises 
+Use [bluebird][bluebird], not `$q`
  ```JS
  function trackDigests(app) {
     app.run(["$rootScope",function ($rootScope) {
@@ -13,12 +13,12 @@
     }]);
 }
 
-
 var app = angular.module('HelloApp', []);
 trackDigests(app);
 ```
 
-- If using `$timeout`, use a wrapper service instead that ensures your `$timeout` is cleared on `$destroy`
+# $timeout GC
+If using `$timeout`, use a wrapper service instead that ensures your `$timeout` is cleared on `$destroy`
 ```JS
 angular.module('safeTimeout', [])
 .service('safeTimeout', function($timeout) {
