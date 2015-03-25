@@ -39,6 +39,9 @@ This allows others to find specific files associated with your feature and keep 
 	myFeatureModel.js
 	myFeatureView.js		
 	myFeature.scss
+	myFeature_print.scss
+	myFeature_buttons.scss
+	myFeature_forms.scss
 
 ```
 
